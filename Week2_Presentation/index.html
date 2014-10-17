@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/swipebox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Swipebox Demo</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- jQuery -->
+	<script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
+</head>
+<body>
+	<h1>Gallery Demo</h1>
+	<ul class="box-container">
+		<li class="box">
+			<a href="https://farm9.staticflickr.com/8239/8594404592_c8e9e603ac_z.jpg" title="Chicago Winter Chill by Jamie McCaffrey, on Flickr" class="swipebox">
+				<img src="https://farm9.staticflickr.com/8239/8594404592_c8e9e603ac_z.jpg" width="640" height="427" alt="Chicago Winter Chill">
+			</a>
+		</li>
+		<li class="box">
+			<a href="https://farm6.staticflickr.com/5594/14712279570_5cf0735608_z.jpg" title="Chicago Gold Coast: When the Morning Breaks by Roman Boed, on Flickr" class="swipebox">
+				<img src="https://farm6.staticflickr.com/5594/14712279570_5cf0735608_z.jpg" width="640" height="427" alt="Chicago Gold Coast: When the Morning Breaks">
+			</a>
+		</li>
+		<li class="box">
+			<a href="https://farm9.staticflickr.com/8387/8579590420_665bfcd95b_z.jpg" title="A Second City rose from the ashes of the first - Chicago. by Jamie McCaffrey, on Flickr" class="swipebox">
+				<img src="https://farm9.staticflickr.com/8387/8579590420_665bfcd95b_z.jpg" width="640" height="432" alt="A Second City rose from the ashes of the first - Chicago.">
+			</a>
+		</li>
+		<li class="box">
+			<a href="https://farm4.staticflickr.com/3064/3044109456_9056160309_z.jpg" title="Chicago by Robert S. Donovan, on Flickr" class="swipebox">
+				<img src="https://farm4.staticflickr.com/3064/3044109456_9056160309_z.jpg" width="640" height="427" alt="Chicago">
+			</a>
+		</li>
+		<li class="box">
+			<a href="https://farm9.staticflickr.com/8092/8566552113_eb3df4d2f4_z.jpg" title="The Bean by Jamie McCaffrey, on Flickr" class="swipebox">
+				<img src="https://farm9.staticflickr.com/8092/8566552113_eb3df4d2f4_z.jpg" width="640" height="428" alt="The Bean">
+			</a>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		(function($){
+
+			$('.swipebox').swipebox({
+				useCSS : true,
+				useSVG : false,
+				hideCloseButtonOnMobile : true,
+				hideBarsDelay : 5000,
+				loopAtEnd : true
+
+			});
+
+
+		})(jQuery);
+	</script>
+</body>
+</html>
